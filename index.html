@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>sushi love</title>	
+<link href="jquery-ui.min.css" rel="stylesheet" type="text/css">	
+<link href="style.css" rel="stylesheet" type="text/css">
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous">
+</script>
+		
+<script src="jquery-ui.min.js" type="text/javascript"></script>	
+<script src="script.js" type="text/javascript"></script>
+<script src="home.js" type="text/javascript"></script>
+</head>
+<body>	
+<a href="#" class="scrollToTop mix-blend"><img src="arrow.svg" alt="freccia" class="freccia"></a>
+	<div id="menufisso">
+		<div class="socialmenu mix-blend">
+			<a href="https://www.facebook.com/" target="_blank"><img src="iconafb.png" alt="snapchat" class="iconasocial"></a>
+			<a href="https://www.tripadvisor.it/" target="_blank"><img src="iconatripadvisor.png" alt="snapchat" class="iconasocial"></a>
+			<a href="https://www.instagram.com/" target="_blank"><img src="iconainsta.png" alt="snapchat" class="iconasocial"></a>
+			<div class="ferma"></div>
+		</div>
+		<div id="voci" class="mix-blend">
+			<div class="home">
+				<p><a href="index.html">home</a></p>
+			</div>
+			<div class="chisiamo">
+			<p><a href="chisiamo.html">chi siamo</a></p>
+			</div>
+			<div class="menu">
+				<p><a href="menu.html">menù</a></p>
+			</div>
+			<div class="contatti">
+				<p><a href="#">contatti</a></p>
+			</div>
+		</div>
+		<p class="contattodiretto mix-blend">075 8038541<br>INFO@SUSHILOVE.COM</p>
+	</div>
+	<div class="menubox">
+		<ul id="menu">
+			<li><a href="#">HOME</a></li>
+			<li><a href="#">SUSHI MENU</a></li>
+			<li><a href="#">CHI SIAMO</a></li>
+			<li><a href="#">CONTATTI</a></li>
+		</ul>
+	</div>
+	<div class="wrapper">
+		<header id="testata">
+			<a href="#"><img src="logo.png" alt="logo" class="logotestata"></a>
+			<div class="hamburger">
+				<div class="astina croce1"></div>
+				<div class="astina centrale"></div>
+				<div class="astina croce2"></div>
+			</div>
+			<div class="ferma"></div>
+		</header>
+		
+		<div class="introgrande">
+			<div class="box">
+				<!--<div class="controllo"></div>-->
+				<a href="index.html"><img src="logo.png" alt="logo" class="logointro"></a>
+				<section class="modulounogrande">
+					<h2 class="titoletto">Prenota il tuo tavolo</h2>
+					<form class="formtavologrande" enctype="multipart/form-data" name="modulo" action="pagina_azione.php" method="post">
+						<select name="orario" class="orario">
+							<option value="ora">ora</option>
+							<option value="setteemezzo">19:00</option>
+							<option value="otto">19:30</option>
+							<option value="ottoemezzo">20:00</option>
+							<option value="nove">20:30</option>
+							<option value="noveemezzo">21:00</option>
+							<option value="dieci">21:30</option>
+						</select>
+						<select name="coperti" class="coperti">
+							<option value="numerocoperti">numero coperti</option>
+							<option value="uno">1</option>
+							<option value="due">2</option>
+							<option value="tre">3</option>
+							<option value="quattro">4</option>
+							<option value="cinque">5</option>
+							<option value="sei">6</option>
+							<option value="sette">7</option>
+							<option value="otto">8</option>
+							<option value="nove">9</option>
+						</select>
+						<textarea id="nomecoperti" name="testo" placeholder="nome"></textarea>
+						<input name="submit" type="submit" value="PRENOTA" class="invioprenota">
+						<input name="submit" type="reset" value="cancella" class="cancellaprenota">
+						<div class="ferma"></div>
+					</form>
+				</section>
+				<p class="info">DISPONIBILE SOLO PER VENERD E SABATO</p>
+			</div>
+			<img src="fotoaperturagrande.png" alt="foto apertura grande" class="imgaperturagrande">
+			<div class="ferma"></div>
+		</div>
+		<div class="intro">
+			<img src="fotoapertura.png" alt="img presentazione" class="imgpresentazione">
+		
+		
+			<section class="modulouno">
+				<h2 class="titoletto">Prenota il tuo tavolo</h2>
+				<div class="formbox">
+					<form class="formtavolo" enctype="multipart/form-data" name="modulo" action="pagina_azione.php" method="post">
+						<input type="text" id="datepicker" placeholder="Data">
+						<select name="orario" class="orario">
+							<option value="ora">ora</option>
+							<option value="setteemezzo">19:00</option>
+							<option value="otto">19:30</option>
+							<option value="ottoemezzo">20:00</option>
+							<option value="nove">20:30</option>
+							<option value="noveemezzo">21:00</option>
+							<option value="dieci">21:30</option>
+						</select>
+						<select name="coperti" class="coperti">
+							<option value="numerocoperti">numero coperti</option>
+							<option value="uno">1</option>
+							<option value="due">2</option>
+							<option value="tre">3</option>
+							<option value="quattro">4</option>
+							<option value="cinque">5</option>
+							<option value="sei">6</option>
+							<option value="sette">7</option>
+							<option value="otto">8</option>
+							<option value="nove">9</option>
+						</select>
+						<input type="text" name="nome" id="nome" placeholder="Nome e Cognome"/>
+						<input name="" type="submit" value="PRENOTA" class="inputprenota">
+						<input name="" type="reset" value="cancella" class="inputcancella">
+						<div class="ferma"></div>
+					</form>
+				</div>
+			</section>
+		</div>
+		<div class="contenitoreblu">	
+			<div class="ashtagsection">
+					<img src="imgcuore.png" alt="cuore logo" class="cuorelogo">
+					<div class="testocentrato">
+						<p class="testoanimato">ogni mese verrà offerta una porzione di sushi a scelta alla foto del mese più gettonata sotto ashtag sushilove
+						Tocca il cuore per vedere la foto del mese </p>
+					</div>
+				</div>
+				<section class="modulodue">
+					<h2 class="titoletto bianco">Consegna a domicilio</h2>
+					<form class="formdomicilio" enctype="multipart/form-data" name="modulo" action="pagina_azione.php" method="post">
+						<input type="text" name="nome" id="nomedue" placeholder="Nome e Cognome"/>
+						<input type="text" name="tel" id="tel" placeholder="tel"/>
+						<input type="text" name="indirizzo" id="indirizzo" placeholder="Indirizzo"/>
+						<select name="orario" class="orario">
+							<option value="menu">MENU</option>
+							<option value="hosomakifritto">hosomaki fritto</option>
+							<option value="nigiriphiladelphia">nigiri philadelphia</option>
+							<option value="nigiricalifornia">nigiri california</option>
+							<option value="avocadoroll">avocado roll</option>
+							<option value="nigiriphiladelphia">nigiri philadelphia</option>
+						</select>
+						<input name="ordina" type="submit" value="ORDINA">
+					</form>
+				</section>
+				<div class="ferma"></div>
+		</div>
+		<div class="descrizione">
+			<p class="testodesc">Sushi Love è un ristorante di cucina giapponese gestito da cuochi Italiani che si aggiornano costantemente per proporre piatti sempre più gustosi e originali.<br>
+			Sushi Love ti aiuta a risparmiare con varie soluzioni:
+			Ti propone due tipologie di menù: menù infinity e menù alla carta.<br>
+			Se scatti una foto al tuo piatto e la pubblichi su instagram ricevi subito il 10% di sconto sul conto totale (non vale per la consegna a domicilio), inoltre ogni mese verrà regalato uno dei nostri piatti alla persona che raccoglierà il maggior numero di like sulla foto sotto ashtag #sushilove!<br>
+			Per chi desidera consumare le nostre specialità di Sushi comodamente a casa o in ufficio, Sushi Love propone il servizio di ordina online con servizio di consegna o ritiro in negozio. </p>
+		</div>
+		<div class="contenitore">
+			<div class="curiosita sushi1">
+				<div class="curiositacontent">
+					<h1 class="titolocuriosita1">CURIOSITÀ</h1>
+					<h2 class="sottotitolocuriosita1">il Sushi</h2>
+					<p class="testocuriosita1">Piatto tipico della cucina giapponese a base di riso bollito e aromatizzato con zucchero e aceto di riso, in forma di polpettine ripiene o guarnite generalmente di pesce crudo (o cotto), da intingere nella salsa di soia e gustare in un solo boccone. </p>
+				</div>
+			</div>
+			<div class="ashtag">
+				<img src="img3piccola.png" alt="sushi" class="sushi">
+				<div class="testoashtag1">
+					<h1>#SUSHILOVE</h1>
+					<p>scatta una foto, pubblicala su instagram e usa l'ashtag #sushilove per ricevere il 10% di sconto sul totale della tua spesa</p>
+				</div>
+			</div>
+			<div class="ferma"></div>
+		</div>
+		<div class="contenitoreblu">
+			<div class="ashtag2">
+				<img src="img4piccola.png" alt="sushi" class="sushi">
+				<div class="testoashtag2">
+					<h1>#SUSHILOVE</h1>
+					<p>scatta una foto, pubblicala su instagram e usa l'ashtag #sushilove per ricevere il 10% di sconto sul totale della tua spesa</p>
+				</div>
+			</div>
+			<div class="curiosita riso">
+				<div class="curiositacontent">
+					<h1 class="titolocuriosita2">CURIOSITÀ</h1>
+					<h2 class="sottotitolocuriosita2">il Riso</h2>
+					<p class="testocuriosita2">Il riso sushi (sushi-meshi / Sumeshi) viene preparato con un riso bianco, dolce a grano corto, lavato e cotto seguendo una particolare tecnica e successivamente bagnato con aceto di riso nel quale vengono disciolti zucchero e sale, quindi leggermente scaldato, kombu e sakè. Viene raffreddato alla temperatura del corpo prima di essere usato.
+					Il riso usato è la qualità Japonica che ha una consistenza diversa da quelle normalmente mangiate al di fuori del Giappone. </p>
+				</div>
+			</div>
+			<div class="ferma"></div>
+		</div>
+		<footer id="footer">
+			<a href="index.html"><img src="logo.png" alt="logo" class="logofooter"></a>
+			<div class="footerinfo">
+				<div class="boxfooter">
+					<p>Aperto tutti i giorni <br>
+					dalle 12 alle 23.
+					</p>
+				</div>	
+				<div class="asta"></div>
+				<div class="boxfooter">
+					<p>Via Indipendenza, 54<br>
+					Petrignano di Assisi PG
+					</p>
+				</div>
+				<div class="asta"></div>
+				<div class="boxfooter">
+					<p>P.Iva
+					00316610542<br>
+					Email
+					info@sushilove.it
+					</p>
+				</div>
+				<div class="asta"></div>
+				<div class="boxfooter">
+					<h2>chiama ora</h2>
+					<p>
+					075 8038541
+					</p>
+				</div>
+				<div class="ferma"></div>
+			</div>
+			<div class="socialfooter">
+				<div class="iconasocial">
+					<a href="https://www.facebook.com/"><img src="iconafb.png" alt="facebook" class="fb"></a>
+					<div class="barra1"></div>
+				</div>
+				<div class="iconasocial">
+					<a href="#"><img src="iconatripadvisor.png" alt="snapchat" class="trad"></a>
+					<div class="barra2"></div>
+				</div>
+				<div class="iconasocial">
+					<a href="#"><img src="iconainsta.png" alt="instagram" class="insta"></a>
+					<div class="barra3"></div>
+				</div>
+				<div class="ferma"></div>
+			</div>
+			<div class="copyright">
+				<p>&copy; 2041 Designed by Lucia Bolletta</p>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
